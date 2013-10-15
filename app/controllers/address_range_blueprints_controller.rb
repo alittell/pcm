@@ -1,0 +1,2 @@
+class AddressRangeBlueprintsController < ApplicationController
+end

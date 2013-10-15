@@ -1,0 +1,15 @@
+%h1 My Projects
+
+%table
+	%tr
+		%th Name
+		%th Description
+
+	- @projects.each do |p|
+		%tr
+			%td
+				= link_to p.name, project_path(p)
+			%td
+				= p.description
+
+= link_to 'New', new_project_path

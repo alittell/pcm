@@ -1,0 +1,11 @@
+%p
+	%strong Name: 
+	= @project.name
+
+%p
+	%strong Description: 
+	= @project.description
+
+= link_to 'Edit', edit_project_path
+= link_to 'Destroy', project_path,
+method: :delete, data: { confirm: 'Are you sure?' } 
